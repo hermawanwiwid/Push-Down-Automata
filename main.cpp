@@ -1,338 +1,217 @@
+#include "pushdownautomata.h"
 #include <iostream>
-#include "tba2.h"
 
 using namespace std;
 
-string input;
-string token[100];
-int i,k,b;
-bool cek;
-
-void createstack(Stack &s)
-{
-    top(s)= -1;
-}
-
-void push (Stack &s, infotype x)
-{
-    if(top(s)!=19)
-    {
-        top(s)++;
-        s.info[top(s)]=x;
-    }
-}
-
-infotype pop(Stack &s)
-{
-    if(top(s)>=0)
-    {
-        string x = s.info[top(s)];
-        top(s)--;
-        return x;
-    }
-}
-
-void printinfo (Stack &s)
-{
-    if (top(s)==-1)
-    {
-        cout<<"Kosong";
-    }
-    else
-    {
-        for(int i = top(s); i >= 0; i--)
-        {
-            cout<<s.info[i]<<" ";
-        }
-    }
-}
-
-void moveForward()
-{
-    while(input[i]!=' ' && input[i]!='\0')
-    {
-        i++;
-    }
-}
-
 int main()
 {
-    cout<<"Input : ";
-    getline(cin,input);
-    k = input.length();
-    cek=true;
-    b=0;
+    string masukkan;
+    string token[100];
+    int counter [100];
+    int i,j,k;
+    bool check;
+
+    cout << "#### TUGAS BESAR TEORI BAHASA DAN AUTOMATA ####"<<endl
+         << "       #### KELOMPOK 10 ####\n"<<endl;
+
+
+    cout<<"Masukkan : ";
+    getline(cin,masukkan);
+    j = masukkan.length();
+    check=true;
+    k=0;
     i=0;
-    while ( i <= k && input[i]!='\0' && cek )
-    {
-        while(input[i]==' ' && cek)
-        {
+
+    while ( i <= j && masukkan[i]!='\0' && check ) {
+        while (masukkan[i] == ' ' && check) {
             i++;
         }
-        if (input[i]=='p'|| input[i]=='q' || input[i]=='r' || input[i]=='s')
-        {
+        if (masukkan[i] == 'p' || masukkan[i] == 'q' || masukkan[i] == 'r' || masukkan[i] == 's') {
             i++;
-            if(input[i]==' '|| input[i]=='\0')
-            {
-                b++;
-                token[b]='1';
+            if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                k++;
+                token[k] = '1';
+            } else {
+                check = false;
             }
-            else
-            {
-                cek = false;
-            }
-        }
-        else if (input[i]=='n')
-        {
+
+        } else if (masukkan[i] == 'n') {
             i++;
-            if (input[i]=='o')
-            {
+            if (masukkan[i] == 'o') {
                 i++;
-                if (input[i]=='t')
-                {
+                if (masukkan[i] == 't') {
                     i++;
-                    if(input[i]==' '|| input[i]=='\0')
-                    {
-                        b++;
-                        token[b]='2';
+                    if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                        k++;
+                        token[k] = '2';
+                    } else {
+                        check = false;
                     }
-                    else
-                    {
-                        cek = false;
-                    }
+                } else {
+                    check = false;
                 }
-                else
-                {
-                    cek = false;
-                }
+            } else {
+                check = false;
             }
-            else
-            {
-                cek = false;
-            }
-        }
-        else if (input[i]=='a')
-        {
+
+        } else if (masukkan[i] == 'a') {
             i++;
-            if (input[i]=='n')
-            {
+            if (masukkan[i] == 'n') {
                 i++;
-                if (input[i]=='d')
-                {
+                if (masukkan[i] == 'd') {
                     i++;
-                    if(input[i]==' '|| input[i]=='\0')
-                    {
-                        b++;
-                        token[b]='3';
+                    if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                        k++;
+                        token[k] = '3';
+                    } else {
+                        check = false;
                     }
-                    else
-                    {
-                        cek = false;
-                    }
+                } else {
+                    check = false;
                 }
-                else
-                {
-                    cek=false;
-                }
+            } else {
+                check = false;
             }
-            else
-            {
-                cek = false;
-            }
-        }
-        else if (input[i]=='o')
-        {
+
+        } else if (masukkan[i] == 'o') {
             i++;
-            if (input[i]=='r')
-            {
+            if (masukkan[i] == 'r') {
                 i++;
-                if(input[i]==' '|| input[i]=='\0')
-                {
-                    b++;
-                    token[b]='4';
+                if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                    k++;
+                    token[k] = '4';
+                } else {
+                    check = false;
                 }
-                else
-                {
-                    cek=false;
-                }
+            } else {
+                check = false;
             }
-            else
-            {
-                cek=false;
-            }
-        }
-        else if (input[i]=='x')
-        {
+
+        } else if (masukkan[i] == 'x') {
             i++;
-            if (input[i]=='o')
-            {
+            if (masukkan[i] == 'o') {
                 i++;
-                if (input[i]=='r')
-                {
+                if (masukkan[i] == 'r') {
                     i++;
-                    if(input[i]==' '|| input[i]=='\0')
-                    {
-                        b++;
-                        token[b]='5';
+                    if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                        k++;
+                        token[k] = '5';
+                    } else {
+                        check = false;
                     }
-                    else
-                    {
-                        cek=false;
-                    }
+                } else {
+                    check = false;
                 }
-                else
-                {
-                    cek=false;
-                }
+            } else {
+                check = false;
             }
-            else
-            {
-                cek=false;
-            }
-        }
-        else if (input[i]=='i')
-        {
+
+        } else if (masukkan[i] == 'i') {
             i++;
-            if (input[i]=='f')
-            {
+            if (masukkan[i] == 'f') {
                 i++;
-                if(input[i]==' '|| input[i]=='\0')
-                {
-                    b++;
-                    token[b]='6';
-                }
-                else if(input[i]=='f')
-                {
+                if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                    k++;
+                    token[k] = '6';
+                } else if (masukkan[i] == 'f') {
                     i++;
-                    if(input[i]!=' '|| input[i]!='\0')
-                    {
-                        b++;
-                        token[b]='8';
+                    if (masukkan[i] != ' ' || masukkan[i] != '\0') {
+                        k++;
+                        token[k] = '8';
                     }
+                } else {
+                    check = false;
                 }
-                else
-                {
-                    cek=false;
-                }
+            } else {
+                check = false;
             }
-            else
-            {
-                cek=false;
-            }
-        }
-        else if (input[i]=='t')
-        {
+
+        } else if (masukkan[i] == 't') {
             i++;
-            if (input[i]=='h')
-            {
+            if (masukkan[i] == 'h') {
                 i++;
-                if (input[i]=='e')
-                {
+                if (masukkan[i] == 'e') {
                     i++;
-                    if (input[i]=='n')
-                    {
+                    if (masukkan[i] == 'n') {
                         i++;
-                        if(input[i]==' '|| input[i]=='\0')
-                        {
-                            b++;
-                            token[b]='7';
+                        if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                            k++;
+                            token[k] = '7';
                         }
+                    } else {
+                        check = false;
                     }
-                    else
-                    {
-                        cek=false;
-                    }
+                } else {
+                    check = false;
                 }
-                else
-                {
-                    cek=false;
-                }
+            } else {
+                check = false;
             }
-            else
-            {
-                cek=false;
-            }
-        }
-        else if (input[i]=='(')
-        {
+
+        } else if (masukkan[i] == '(') {
             i++;
-            if(input[i]==' '|| input[i]=='\0')
-            {
-                b++;
-                token[b]='9';
+            if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                k++;
+                token[k] = '9';
+            } else {
+                check = false;
             }
-            else
-            {
-                cek=false;
-            }
-        }
-        else if (input[i]==')')
-        {
+
+        } else if (masukkan[i] == ')') {
             i++;
-            if(input[i]==' '|| input[i]=='\0')
-            {
-                b++;
-                token[b] = "10";
+            if (masukkan[i] == ' ' || masukkan[i] == '\0') {
+                k++;
+                token[k] = "10";
+            } else {
+                check = false;
             }
-            else
-            {
-                cek=false;
+        } else {
+            check = false;
+        }
+        if (check == false) {
+            while (masukkan[i] != ' ' && masukkan[i] != '\0') {
+                i++;
             }
-        }
-        else
-        {
-            cek=false;
-        }
-        if (cek == false)
-        {
-            moveForward();
-            b++;
-            token[b]="error";
-            //cout<<"ini"<<endl;
-            // cek = true;
+            k++; //token
+            token[k] = "error";
         }
     }
-    cout<<"Output : ";
-    for(i=1; i<=b; i++)
+    cout<<"Keluaran : ";
+    for(i=1; i<=k; i++)
     {
         cout<<token[i]<<" ";
     }
+
+
     Stack S;
-    bool cek2;
+    bool checktoken;
     createstack(S);
     push(S, "#");
     i=1;
-    cek2 =true;
-    while (token[i] != "" && cek2)
-    {
-        if (token[i] == "1" &&(S.info[top(S)]=="Z" || S.info[top(S)]=="A"  ||S.info[top(S)]=="#" || S.info[top(S)]=="W" || S.info[top(S)]=="B" || S.info[top(S)] == "Y") )
-        {
-            if (S.info[top(S)]=="Z" || S.info[top(S)]=="A" || S.info[top(S)]=="B")
-            {
+    checktoken =true;
+
+    while (token[i] != "" && checktoken) {
+        if (token[i] == "1" &&(S.info[top(S)]=="Z" || S.info[top(S)]=="A"  ||S.info[top(S)]=="#" || S.info[top(S)]=="W" || S.info[top(S)]=="B" || S.info[top(S)] == "Y") ) {
+            if (S.info[top(S)]=="Z" || S.info[top(S)]=="A" || S.info[top(S)]=="B") {
                 pop(S);
                 push(S, "X");
             }
-            else if (S.info[top(S)]=="#" || S.info[top(S)]=="W" || S.info[top(S)] == "Y")
-            {
+            else if (S.info[top(S)]=="#" || S.info[top(S)]=="W" || S.info[top(S)] == "Y") {
                 push(S,"X");
             }
-            else
-            {
-                cek2=false;
+            else {
+                checktoken=false;
             }
         }
-        else if(token[i] == "2" && (S.info[top(S)]=="#" || S.info[top(S)] == "Y" || S.info[top(S)] == "B" || S.info[top(S)] == "A"))
-        {
-            if (S.info[top(S)] == "B" || S.info[top(S)] == "A")
-            {
+        else if(token[i] == "2" && (S.info[top(S)]=="#" || S.info[top(S)] == "Y" || S.info[top(S)] == "B" || S.info[top(S)] == "A")) {
+            if (S.info[top(S)] == "B" || S.info[top(S)] == "A") {
                 pop(S);
                 push(S, "Z");
             }
             else if (S.info[top(S)]=="#" || S.info[top(S)] == "Y")
                 push(S, "Z");
         }
-        else if(token[i] == "6" && (S.info[top(S)]=="Y" || S.info[top(S)]=="#" || S.info[top(S)]=="Y"))
-        {
+        else if(token[i] == "6" && (S.info[top(S)]=="Y" || S.info[top(S)]=="#" || S.info[top(S)]=="Y")) {
             if (token[i]=="6")
                 push(S,"W");
         }
@@ -379,7 +258,7 @@ int main()
         }
         else
         {
-            cek2=false;
+            checktoken=false;
         }
 
         cout<<endl;
@@ -390,7 +269,7 @@ int main()
     if (S.info[top(S)]=="X" || S.info[top(S)]=="C")
         pop(S);
     pop(S);
-    if (top(S)==-1&& cek2)
+    if (top(S)==-1&& checktoken)
     {
         cout<<"valid";
     }

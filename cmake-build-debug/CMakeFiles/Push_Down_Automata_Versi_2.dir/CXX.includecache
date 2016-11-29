@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+E:/Dani Project/Push Down Automata Versi 2/main.cpp
+pushdownautomata.h
+E:/Dani Project/Push Down Automata Versi 2/pushdownautomata.h
+iostream
+-
+
+E:/Dani Project/Push Down Automata Versi 2/pushdownautomata.cpp
+pushdownautomata.h
+E:/Dani Project/Push Down Automata Versi 2/pushdownautomata.h
+
+E:/Dani Project/Push Down Automata Versi 2/pushdownautomata.h
+iostream
+-
+
