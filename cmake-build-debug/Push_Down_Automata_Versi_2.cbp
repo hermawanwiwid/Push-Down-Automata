@@ -8,18 +8,18 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug"/>
+				<Option working_dir="E:/Dani Project/Push-Down-Automata/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Push_Down_Automata_Versi_2">
-				<Option output="E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Push_Down_Automata_Versi_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug"/>
+				<Option output="E:/Dani Project/Push-Down-Automata/cmake-build-debug/Push_Down_Automata_Versi_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Dani Project/Push-Down-Automata/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -32,15 +32,15 @@
 					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Push_Down_Automata_Versi_2"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 Push_Down_Automata_Versi_2"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="Push_Down_Automata_Versi_2/fast">
-				<Option output="E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Push_Down_Automata_Versi_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug"/>
+				<Option output="E:/Dani Project/Push-Down-Automata/cmake-build-debug/Push_Down_Automata_Versi_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="E:/Dani Project/Push-Down-Automata/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,43 +53,43 @@
 					<Add directory="C:/Program Files (x86)/CodeBlocks/MinGW/bin/../lib/gcc/mingw32/4.9.2/include/c++/backward"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 Push_Down_Automata_Versi_2/fast"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 Push_Down_Automata_Versi_2/fast"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug"/>
+				<Option working_dir="E:/Dani Project/Push-Down-Automata/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug"/>
+				<Option working_dir="E:/Dani Project/Push-Down-Automata/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/PROGRA~2/CODEBL~1/MinGW/bin/mingw32-make.exe -f &quot;E:/Dani Project/Push-Down-Automata/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="E:/Dani Project/Push Down Automata Versi 2/main.cpp">
+		<Unit filename="E:/Dani Project/Push-Down-Automata/main.cpp">
 			<Option target="Push_Down_Automata_Versi_2"/>
 		</Unit>
-		<Unit filename="E:/Dani Project/Push Down Automata Versi 2/pushdownautomata.cpp">
+		<Unit filename="E:/Dani Project/Push-Down-Automata/pushdownautomata.cpp">
 			<Option target="Push_Down_Automata_Versi_2"/>
 		</Unit>
-		<Unit filename="E:/Dani Project/Push Down Automata Versi 2/pushdownautomata.h">
+		<Unit filename="E:/Dani Project/Push-Down-Automata/pushdownautomata.h">
 			<Option target="Push_Down_Automata_Versi_2"/>
 		</Unit>
-		<Unit filename="E:/Dani Project/Push Down Automata Versi 2/CMakeLists.txt">
+		<Unit filename="E:/Dani Project/Push-Down-Automata/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

@@ -261,9 +261,9 @@ int main()
             checktoken=false;
         }
 
-        cout<<endl;
-        printinfo(S);
-        cout<<endl;
+       // cout<<endl;
+       // printinfo(S);
+       // cout<<endl;
         i++;
     }
     if (S.info[top(S)]=="X" || S.info[top(S)]=="C")

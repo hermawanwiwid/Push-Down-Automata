@@ -1,4 +1,4 @@
-# Install script for directory: E:/Dani Project/Push Down Automata Versi 2
+# Install script for directory: E:/Dani Project/Push-Down-Automata
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -35,5 +35,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "E:/Dani Project/Push-Down-Automata/cmake-build-debug/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

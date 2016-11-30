@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "E:/Dani Project/Push Down Automata Versi 2/main.cpp" "E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/CMakeFiles/Push_Down_Automata_Versi_2.dir/main.cpp.obj"
-  "E:/Dani Project/Push Down Automata Versi 2/pushdownautomata.cpp" "E:/Dani Project/Push Down Automata Versi 2/cmake-build-debug/CMakeFiles/Push_Down_Automata_Versi_2.dir/pushdownautomata.cpp.obj"
+  "E:/Dani Project/Push-Down-Automata/main.cpp" "E:/Dani Project/Push-Down-Automata/cmake-build-debug/CMakeFiles/Push_Down_Automata_Versi_2.dir/main.cpp.obj"
+  "E:/Dani Project/Push-Down-Automata/pushdownautomata.cpp" "E:/Dani Project/Push-Down-Automata/cmake-build-debug/CMakeFiles/Push_Down_Automata_Versi_2.dir/pushdownautomata.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
